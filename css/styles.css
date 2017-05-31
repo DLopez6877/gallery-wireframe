@@ -19,22 +19,23 @@ body {
 /*/////////////////////          GENERAL          /////////////////////*/
 .title {
   width: 95%;
-  margin: 5% 2.5%;
+  margin: 5% 2.5% 0 2.5%;
 }
 
 .gallery {
   width: 90%;
-  margin: 2.5% 5% 5% 5%;
+  margin: 0 5% 5% 5%;
   padding: 5% 5%;
+  background-color: rgba(255, 255, 255, 0.4); /* testing purposes*/
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .col-gal {
   margin: 5% 0;
 }
 
-.col-gal:first-of-type, .col-gal:last-of-type {
-  margin: 0;
-}
 /*/////////////////////          @MEDIA          /////////////////////*/
 
 /* Smartphones (landscape) ----------- */
@@ -43,6 +44,11 @@ body {
   body{
     background-color: blue;
   }
+  .col-gal {
+    float: left;
+    width: 45%;
+    margin: 2.5%;
+  }
 }
 
 /* Smartphones (portrait) ----------- */
@@ -50,12 +56,22 @@ body {
   body{
     background-color: red;
   }
+  .col-gal {
+    float: left;
+    width: 45%;
+    margin: 2.5%;
+  }
 }
 
 /* Smartphones Large (landscape) */
 @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape){
   body{
-    background-color: green;
+    background-color: yellow;
+  }
+  .col-gal {
+    float: left;
+    width: 30%;
+    margin: 1.666%;
   }
 }
 
@@ -64,12 +80,22 @@ body {
   body{
     background-color: orange;
   }
+  .col-gal {
+    float: left;
+    width: 45%;
+    margin: 2.5%;
+  }
 }
 
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
   body{
     background-color: pink;
+  }
+  .col-gal {
+    float: left;
+    width: 30%;
+    margin: 1.666%;
   }
 }
 
@@ -78,12 +104,22 @@ body {
   body{
     background-color: purple;
   }
+  .col-gal {
+    float: left;
+    width: 45%;
+    margin: 2.5%;
+  }
 }
-
 
 /* Large screens ----------- */
 @media only screen  and (min-width : 1824px) {
   body{
     background-color: green;
   }
+  .col-gal {
+    float: left;
+    width: 30%;
+    margin: 1.666%;
+  }
+
 }
