@@ -2,6 +2,8 @@
 *:not(body):not(html) {
   box-sizing:border-box;
   border:1px dashed #000;
+  background-color: white;
+  opacity: .7
 }
 
 .column {
@@ -13,22 +15,30 @@ body {
   margin: 0;
 }
 
-.container {
-  margin: 10px;
-  border-width: medium;
-  padding: 5%;
-  min-height: calc(100vh - 20px);
-}
 
 /*/////////////////////          GENERAL          /////////////////////*/
-.col1 {
-
+.title {
+  width: 95%;
+  margin: 5% 2.5%;
 }
 
+.gallery {
+  width: 90%;
+  margin: 2.5% 5% 5% 5%;
+  padding: 5% 5%;
+}
+
+.col-gal {
+  margin: 5% 0;
+}
+
+.col-gal:first-of-type, .col-gal:last-of-type {
+  margin: 0;
+}
 /*/////////////////////          @MEDIA          /////////////////////*/
 
 /* Smartphones (landscape) ----------- */
-@media only screen and (min-width : 321px) {
+@media only screen and (min-width : 321px) and (orientation : landscape) {
 /* Styles */
   body{
     background-color: blue;
@@ -36,7 +46,7 @@ body {
 }
 
 /* Smartphones (portrait) ----------- */
-@media only screen and (max-width : 320px) {
+@media only screen and (max-width : 320px) and (orientation : portrait) {
   body{
     background-color: red;
   }
@@ -70,12 +80,6 @@ body {
   }
 }
 
-/* Desktops and laptops ----------- */
-@media only screen  and (min-width : 1224px) {
-  body{
-    background-color: yellow;
-  }
-}
 
 /* Large screens ----------- */
 @media only screen  and (min-width : 1824px) {
